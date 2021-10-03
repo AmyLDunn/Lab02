@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         maps = findViewById(R.id.button);
+        icon = findViewById(R.id.imageView);
 
         maps.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +60,45 @@ public class MainActivity extends AppCompatActivity {
                 public void onActivityResult(ActivityResult result) {
                     if (result.getResultCode() == Activity.RESULT_OK){
                         Intent data = result.getData();
+                        ImageView avatarImage = (ImageView) findViewById(R.id.imageView);
+                        String drawableName;
+                        switch (data.getIntExtra("imageID", R.id.iconid00)){
+                            case R.id.iconid00:
+                                drawableName = "icon_00";
+                                break;
+                            case R.id.iconid01:
+                                drawableName = "icon_01";
+                                break;
+                            case R.id.iconid02:
+                                drawableName = "icon_02";
+                                break;
+                            case R.id.iconid03:
+                                drawableName = "icon_03";
+                                break;
+                            case R.id.iconid04:
+                                drawableName = "icon_04";
+                                break;
+                            case R.id.iconid05:
+                                drawableName = "icon_05";
+                                break;
+                            case R.id.iconid06:
+                                drawableName = "icon_06";
+                                break;
+                            case R.id.iconid07:
+                                drawableName = "icon_07";
+                                break;
+                            case R.id.iconid08:
+                                drawableName = "icon_08";
+                                break;
+                            case R.id.iconid09:
+                                drawableName = "icon_09";
+                                break;
+                            default:
+                                drawableName = "icon_empty";
+                                break;
+                        }
+                        int resID = getResources().getIdentifier(drawableName, "drawable", getPackageName());
+                        avatarImage.setImageResource(resID);
                     }
                 }
             }
