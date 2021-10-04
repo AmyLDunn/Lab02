@@ -90,9 +90,6 @@ public class MainActivity extends AppCompatActivity {
                             case R.id.iconid08:
                                 drawableName = "icon_08";
                                 break;
-                            case R.id.iconid09:
-                                drawableName = "icon_09";
-                                break;
                             default:
                                 drawableName = "icon_empty";
                                 break;
