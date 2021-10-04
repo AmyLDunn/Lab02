@@ -11,10 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
+        android:text="Select a new avatar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="Text here"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
         android:layout_width="wrap_content"
@@ -49,6 +49,57 @@
                 android:src="@drawable/icon_02" />
 
         </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/iconid03"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/icon_03" />
+
+            <ImageView
+                android:id="@+id/iconid04"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/icon_04" />
+
+            <ImageView
+                android:id="@+id/iconid05"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/icon_05" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/iconid06"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/icon_06" />
+
+            <ImageView
+                android:id="@+id/iconid07"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/icon_07" />
+
+            <ImageView
+                android:id="@+id/iconid08"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/icon_08" />
+
+        </TableRow>
+
 
     </TableLayout>
 
